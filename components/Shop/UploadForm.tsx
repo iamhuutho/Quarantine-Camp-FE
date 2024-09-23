@@ -156,7 +156,7 @@ function UploadForm() {
             Địa điểm
           </label>
           <Autocomplete
-            apiKey={"AIzaSyCjo_9j3O1KlsrVY9lPM8_CLOrZrthaZ8A"}
+            apiKey={process.env.GOOGLE_API_KEY}
             onPlaceSelected={(place) => {
               console.log(place);
             }}
